@@ -32,6 +32,7 @@ body {
 
 .contacts {
   display: flex;
+  margin: auto;
 }
 
 .icon {
@@ -72,6 +73,9 @@ body {
   height: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav-bar {
@@ -83,6 +87,9 @@ body {
   top: 100px;
   margin: 0 auto;
   max-width: 1200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav-bar ul {
@@ -187,6 +194,10 @@ body {
   text-align: center;
 }
 
+.process-head {
+  flex-basis: 100%;
+}
+
 .process-number {
   max-width: 200px;
 }
@@ -288,6 +299,10 @@ body {
 /* Services */
 .green {
   color: #73ee3e;
+}
+
+#services {
+  padding-top: 5px;
 }
 
 .service-link:hover {
