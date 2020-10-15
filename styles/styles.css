@@ -4,7 +4,7 @@ body {
   font-family: "Arimo", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #333333;
+  color: #000;
   line-height: 25px;
   margin: 0 auto;
 }
@@ -119,7 +119,7 @@ body {
 /* Slider */
 .slider {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/alan-gore-Zl2ev1oxXkM-unsplash.jpg");
+    url("/img/ashim-d-silva-1UYdeLVpfkQ-unsplash.jpg");
   min-height: calc(100vh - 130px);
   background-position: center;
   background-repeat: no-repeat;
@@ -178,12 +178,17 @@ body {
 .process {
   display: flex;
   justify-content: space-around;
-  max-width: 1200px;
+  flex-wrap: wrap;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background: #173364;
   color: #fff;
   text-align: center;
+}
+
+.process-number {
+  max-width: 200px;
 }
 
 .process h1 {
@@ -228,37 +233,228 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background: #fff;
   text-align: center;
 }
 
+.about-home {
+  background: #73ee3e;
+  padding-bottom: 50px;
+  margin-bottom: 70px;
+}
+
 .about-container h1 {
-  margin-top: 200px;
+  padding-top: 170px;
+  margin-top: 0px;
 }
 
 .about-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .us-points {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 2;
   justify-content: center;
   text-align: left;
 }
 
+.us-summary,
+.us-points {
+  flex-basis: 350px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .us-summary {
-  flex-basis: 1;
+  width: 100%;
 }
 
 .point {
-  flex-basis: 40%;
   display: flex;
 }
 
+.point:first-child {
+  padding-right: 20px;
+}
+
 .point i {
-  color: #73ee3e;
-  margin-right: 10px;
+  color: #000;
+  margin-right: 12px;
 }
 /* End of about us summary */
+
+/* Services */
+.green {
+  color: #73ee3e;
+}
+
+.service-link:hover {
+  color: #2f9404;
+}
+
+.services h1 {
+  font-size: 2.5rem;
+}
+
+.services {
+  text-align: center;
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  flex-basis: 360px;
+  padding: 20px;
+}
+
+.service-link {
+  /* background: #73ee3e; */
+  /* text-decoration: none; */
+  color: #73ee3e;
+  /* color: #000;
+  padding: 10px; */
+}
+/* End of Services */
+
+/* Estimate */
+.estimate-container {
+  margin-top: 50px;
+  background: #73ee3e;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #173364;
+  border-radius: 0;
+  color: #303849;
+  font-size: 16px;
+  font-weight: 300;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 20px 0px 20px 20px;
+  resize: vertical;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.name {
+  margin-right: 16px;
+}
+.name,
+.email {
+  width: 48%;
+}
+
+.name-email,
+.subject,
+.message {
+  width: 100%;
+}
+
+textarea {
+  height: 130px;
+}
+
+.estimate-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.estimate-form {
+  width: 100%;
+}
+
+.estimate-container h1,
+h4 {
+  text-align: center;
+}
+
+.btn-estimate {
+  background: #173364;
+  border-color: #173364;
+
+  color: #fff;
+  border-radius: 0;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  padding: 17px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-estimate:hover {
+  background: #3060b5;
+}
+/* End of Estimate */
+
+/* FOOTER */
+.footer {
+  padding: 30px;
+  color: #fff;
+  background: #173364;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 100px;
+  weight: 200px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #73ee3e;
+}
+
+.footer-item {
+  flex-basis: 350px;
+  padding: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.copy {
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 580px) {
+  /* For mobile phones: */
+  .name,
+  .email {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+}
+/* End Media queries  */
