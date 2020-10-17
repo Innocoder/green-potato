@@ -493,6 +493,13 @@ h4 {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  .slider {
+    min-height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   /* For mobile phones: */
   .boxed-header {
@@ -540,8 +547,8 @@ h4 {
   }
 
   .logo-mobile img {
-    height: 100px;
-    weight: 200px;
+    height: 80px;
+    weight: 100px;
   }
 
   .main-nav a:hover {
@@ -550,7 +557,7 @@ h4 {
 
   .navbar-toggle {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 25px;
     cursor: pointer;
     color: #173364;
@@ -574,7 +581,7 @@ h4 {
   .slider-text {
     text-align: center;
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
