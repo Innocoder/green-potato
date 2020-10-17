@@ -497,10 +497,8 @@ h4 {
 
 .heading-pages {
   background: #73ee3e;
-  padding: 30px;
   padding: 60px;
-  height: 50px;
-  width: 100%;
+  height: 80px;
 }
 
 .heading-pages-title,
@@ -560,7 +558,6 @@ h4 {
 
 .contact-content-container {
   max-width: 500px;
-  margin-top: 30px;
 }
 
 .contact-form {
@@ -609,9 +606,14 @@ h4 {
 
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
-  .contact-form-container {
+  .contact-form-container,
+  .contact-content-container {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .contact-content-container {
+    margin-top: 30px;
   }
 }
 
